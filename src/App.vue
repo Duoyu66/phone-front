@@ -1,28 +1,24 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+<HeaderIndex></HeaderIndex>
+<Home></Home>
+   <FooterIndex></FooterIndex>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-
+import  Home from './views/Home'
+import FooterIndex from "@/components/Footer/FooterIndex";
+import HeaderIndex from "@/components/Header/HeaderIndex";
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,Home,FooterIndex,HeaderIndex
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
