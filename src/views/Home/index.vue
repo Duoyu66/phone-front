@@ -26,6 +26,7 @@
   import Rank from './Rank/Rank'
   import TodayRecommend from './TodayRecommend/TodayRecommend'
   import TypeNav from '../../components/TypeNav'
+  import {mapState} from "vuex"
   export default {
     name: 'Home',
     components: {
@@ -36,6 +37,12 @@
       Rank,
       TodayRecommend,
       TypeNav
+    },
+    mounted() {
+
+    },
+    computed:{
+
     }
   }
 </script>

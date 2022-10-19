@@ -107,7 +107,7 @@ export default {
       try{
         await this.$store.dispatch("userLogout")
         //回到首页
-        this.$router.push("/home")
+        await this.$router.push("/home")
       }catch (e) {
         console.log(e.message)
       }
